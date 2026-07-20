@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{ CSS; } — Course Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; padding: 40px 24px; }
+    .container { max-width: 840px; margin: 0 auto; }
+    h1 { font-family: 'Fira Mono', monospace; font-size: 3rem; color: #58a6ff; margin-bottom: 4px; }
+    h1 span { color: #f0883e; }
+    .subtitle { color: #8b949e; font-size: 1.1rem; margin-bottom: 48px; border-left: 3px solid #58a6ff; padding-left: 16px; }
+    h2 { font-size: 1.5rem; color: #f0f6fc; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #21262d; }
+    .module-grid { display: flex; flex-direction: column; gap: 12px; }
+    .module { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px 20px; transition: border-color 0.2s; }
+    .module:hover { border-color: #58a6ff; }
+    .module h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .module h3 a { color: #58a6ff; text-decoration: none; }
+    .module h3 a:hover { text-decoration: underline; }
+    .module .meta { font-size: 0.85rem; color: #8b949e; }
+    .ex-list { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .ex-tag { font-family: 'Fira Mono', monospace; font-size: 0.8rem; padding: 2px 10px; border-radius: 20px; background: #21262d; color: #8b949e; }
+    .ex-tag.debug { background: #3d1f1f; color: #f85149; }
+    .ex-tag.partial { background: #1f3d2f; color: #3fb950; }
+    .ex-tag.scratch { background: #1f2a3d; color: #58a6ff; }
+    .capstone { margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>{ CSS;<span>;</span> }</h1>
+    <div class="subtitle">Cascading Style Sheets — Debug, Complete, Build</div>
+
+    <h2>Module 1 — Selectors &amp; Specificity</h2>
+    <div class="module-grid">
+      <div class="module">
+        <h3><a href="exercises/module-01-selectors/exercise-specificity.html">🐛 Debug — Specificity</a></h3>
+        <div class="meta">3 broken CSS scenarios. Fix the selector conflicts.</div>
+        <div class="ex-list"><span class="ex-tag debug">debug</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-01-selectors/partial-selectors.html">🧱 Partial — Selectors</a></h3>
+        <div class="meta">Fill in the missing selectors to match each target.</div>
+        <div class="ex-list"><span class="ex-tag partial">partial</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-01-selectors/scratch-style-article.html">🏗️ Scratch — Style an Article</a></h3>
+        <div class="meta">Raw HTML article. Write all CSS from scratch.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+
+    <h2>Module 2 — Combinators &amp; Pseudo-classes</h2>
+    <div class="module-grid">
+      <div class="module">
+        <h3><a href="exercises/module-02-combinators/exercise-combinators.html">🐛 Debug — Combinators</a></h3>
+        <div class="meta">3 broken selectors using descendant, child, and sibling combinators.</div>
+        <div class="ex-list"><span class="ex-tag debug">debug</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-02-combinators/partial-pseudo.html">🧱 Partial — Pseudo-classes</a></h3>
+        <div class="meta">Fill in the missing pseudo-classes to style interactive states.</div>
+        <div class="ex-list"><span class="ex-tag partial">partial</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-02-combinators/scratch-menu.html">🏗️ Scratch — Navigation Menu</a></h3>
+        <div class="meta">Style a nav from scratch using combinators and pseudo-classes.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+
+    <h2>Module 3 — BEM</h2>
+    <div class="module-grid">
+      <div class="module">
+        <h3><a href="exercises/module-03-bem/exercise-bem.html">🐛 Debug — BEM</a></h3>
+        <div class="meta">Fix incorrectly named BEM classes in the CSS.</div>
+        <div class="ex-list"><span class="ex-tag debug">debug</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-03-bem/partial-bem.html">🧱 Partial — BEM</a></h3>
+        <div class="meta">Write the missing BEM selectors for a card component.</div>
+        <div class="ex-list"><span class="ex-tag partial">partial</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-03-bem/scratch-bem.html">🏗️ Scratch — Media Object</a></h3>
+        <div class="meta">Apply BEM naming from scratch to a media component.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+
+    <h2>Module 4 — Typography</h2>
+    <div class="module-grid">
+      <div class="module">
+        <h3><a href="exercises/module-04-typography/exercise-font.html">🐛 Debug — Fonts</a></h3>
+        <div class="meta">Fix font-family, weight, and line-height issues.</div>
+        <div class="ex-list"><span class="ex-tag debug">debug</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-04-typography/partial-typography.html">🧱 Partial — Typography</a></h3>
+        <div class="meta">Complete text styling with font-size, letter-spacing, and more.</div>
+        <div class="ex-list"><span class="ex-tag partial">partial</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-04-typography/scratch-blog-post.html">🏗️ Scratch — Blog Post</a></h3>
+        <div class="meta">Style an article from scratch using typography best practices.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+
+    <h2>Module 5 — Colors</h2>
+    <div class="module-grid">
+      <div class="module">
+        <h3><a href="exercises/module-05-colors/exercise-color.html">🐛 Debug — Colors</a></h3>
+        <div class="meta">Fix contrast and color value mistakes.</div>
+        <div class="ex-list"><span class="ex-tag debug">debug</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-05-colors/partial-color-values.html">🧱 Partial — Color Values</a></h3>
+        <div class="meta">Fill in hex, rgb, and hsl color values correctly.</div>
+        <div class="ex-list"><span class="ex-tag partial">partial</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-05-colors/scratch-color-scheme.html">🏗️ Scratch — Color Scheme</a></h3>
+        <div class="meta">Create a cohesive color scheme from scratch.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+
+    <h2>Module 6 — Box Model</h2>
+    <div class="module-grid">
+      <div class="module">
+        <h3><a href="exercises/module-06-box-model/exercise-box.html">🐛 Debug — Box Model</a></h3>
+        <div class="meta">Fix padding, margin, border, and box-sizing bugs.</div>
+        <div class="ex-list"><span class="ex-tag debug">debug</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-06-box-model/partial-spacing.html">🧱 Partial — Spacing</a></h3>
+        <div class="meta">Complete missing spacing declarations.</div>
+        <div class="ex-list"><span class="ex-tag partial">partial</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-06-box-model/scratch-testimonial.html">🏗️ Scratch — Testimonial Card</a></h3>
+        <div class="meta">Build a testimonial card layout from scratch.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+
+    <h2>Module 7 — Display &amp; Flexbox</h2>
+    <div class="module-grid">
+      <div class="module">
+        <h3><a href="exercises/module-07-display-flexbox/exercise-display.html">🐛 Debug — Display</a></h3>
+        <div class="meta">Fix display type and flex property bugs.</div>
+        <div class="ex-list"><span class="ex-tag debug">debug</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-07-display-flexbox/partial-flexbox.html">🧱 Partial — Flexbox</a></h3>
+        <div class="meta">Fill in flex properties to achieve the correct layout.</div>
+        <div class="ex-list"><span class="ex-tag partial">partial</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-07-display-flexbox/scratch-responsive-cards.html">🏗️ Scratch — Responsive Cards</a></h3>
+        <div class="meta">Build a flexible card grid from scratch.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+
+    <h2>Module 8 — Position</h2>
+    <div class="module-grid">
+      <div class="module">
+        <h3><a href="exercises/module-08-position/exercise-position.html">🐛 Debug — Position</a></h3>
+        <div class="meta">Fix relative, absolute, fixed, and sticky positioning bugs.</div>
+        <div class="ex-list"><span class="ex-tag debug">debug</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-08-position/partial-badge.html">🧱 Partial — Badge Overlay</a></h3>
+        <div class="meta">Position a badge element over a card using absolute positioning.</div>
+        <div class="ex-list"><span class="ex-tag partial">partial</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-08-position/scratch-page-layout.html">🏗️ Scratch — Page Layout</a></h3>
+        <div class="meta">Build a full page layout using position properties.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+
+    <h2>Module 9 — Responsive Design</h2>
+    <div class="module-grid">
+      <div class="module">
+        <h3><a href="exercises/module-09-responsive/exercise-breakpoints.html">🐛 Debug — Breakpoints</a></h3>
+        <div class="meta">Fix media query order and missing breakpoints.</div>
+        <div class="ex-list"><span class="ex-tag debug">debug</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-09-responsive/partial-tablet.html">🧱 Partial — Tablet Layout</a></h3>
+        <div class="meta">Complete a media query to make a sidebar layout responsive.</div>
+        <div class="ex-list"><span class="ex-tag partial">partial</span></div>
+      </div>
+      <div class="module">
+        <h3><a href="exercises/module-09-responsive/scratch-full-responsive.css">🏗️ Scratch — Full Responsive Page</a></h3>
+        <div class="meta">Write all CSS for a mobile-first responsive page.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+
+    <h2>🏆 Capstone</h2>
+    <div class="module-grid">
+      <div class="module capstone">
+        <h3><a href="exercises/capstone-restaurant/index.html">🍽️ Restaurant Menu Page</a></h3>
+        <div class="meta">Full HTML given. Write all CSS combining everything from modules 1–9.</div>
+        <div class="ex-list"><span class="ex-tag scratch">scratch</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* ============================================
+   PARTIAL — SELECTORS
+   Replace each _____ with the correct selector.
+   ============================================ */
+
+
+/* Task 1 — Select all h2 elements */
+_____ {
+  color: navy;
+}
+
+
+/* Task 2 — Select the element with id="hero" */
+_____ {
+  background: lightblue;
+  padding: 40px;
+}
+
+
+/* Task 3 — Select ALL elements with class="feature" */
+_____ {
+  border-left: 4px solid gold;
+  padding-left: 12px;
+}
+
+
+/* Task 4 — Select only <p> tags that have class="feature" */
+_____ {
+  font-weight: bold;
+}
+
+
+/* Task 5 — Select only the second <li> in every <ul> */
+_____ {
+  color: orange;
+}
