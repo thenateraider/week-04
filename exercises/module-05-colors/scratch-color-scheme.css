@@ -17,3 +17,70 @@
    7. .btn-secondary — background transparent, border var(--secondary), color var(--secondary)
    8. .site-footer — background var(--secondary), white text, text-align center, padding
    ============================================ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+   --primary:#273F4F;
+   --secondary:#447D9B;
+   --accent:#FE7743;
+   --bg:#D7D7D7;
+   --text:#3b3b3b;
+}
+
+body {
+   background: var(--bg);
+   color: var(--text);
+   font-family:"Google Sans", sans-serif;
+}
+
+.site-header {
+   background: var(--primary);
+   padding: 16px;
+   color: #FFFFFF;
+   text-align: center;
+   border-radius: 24px;
+}
+.site-header a {
+   color : #FFFFFF;
+   text-decoration: none;
+}
+
+.content {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+
+.btn-secondary {
+  background-color: transparent; 
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+
+.site-footer {
+  background-color: var(--secondary);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 24px;
+}
