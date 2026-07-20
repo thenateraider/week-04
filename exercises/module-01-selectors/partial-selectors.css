@@ -5,32 +5,32 @@
 
 
 /* Task 1 — Select all h2 elements */
-_____ {
+h2 {
   color: navy;
 }
 
 
 /* Task 2 — Select the element with id="hero" */
-_____ {
+#hero {
   background: lightblue;
   padding: 40px;
 }
 
 
 /* Task 3 — Select ALL elements with class="feature" */
-_____ {
+.feature {
   border-left: 4px solid gold;
   padding-left: 12px;
 }
 
 
 /* Task 4 — Select only <p> tags that have class="feature" */
-_____ {
+p .feature {
   font-weight: bold;
 }
 
 
 /* Task 5 — Select only the second <li> in every <ul> */
-_____ {
+ul li:nth-child(2) {
   color: orange;
 }

@@ -11,3 +11,32 @@
    6. .media__text — color #555, line-height 1.5
    7. .media--featured — background #f0f8ff, border-left 4px solid blue
    ============================================ */
+.media {
+   display: flex;
+   gap : 16px;
+   padding: 16px;
+   border-bottom: 1px solid #000000;
+}
+.media__image {
+   width: 100px;
+   height:auto;
+}
+.media__image--round{
+   border-radius: 50%;
+}
+.media__body{
+   flex: 1;
+}
+.media__title{
+   font-size: 1.2rem;
+   font-weight: bold;
+   margin-bottom: 4px;
+}
+.media__text {
+   color : #555;
+   line-height:1.5;
+}
+.media--featured{
+   background: #f0f8ff;
+   border-left:4px solid blue;
+}

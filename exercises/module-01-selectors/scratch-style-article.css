@@ -9,3 +9,23 @@
    4. All span elements with class="highlight" — bold, yellow background
    5. First letter of every paragraph — 2x font size, red
    ============================================ */
+h1 {
+   color:darkslateblue;
+   text-align:center;
+}
+#author {
+   font-style:italic;
+   color:gray;
+}
+.content p{
+   line-height: 1.8;
+}
+
+span.highlight {
+   font-weight: bold;
+   background-color: yellow;
+}
+p::first-letter{
+   text-transform: capitalize;
+   font-size: 200%;
+}
