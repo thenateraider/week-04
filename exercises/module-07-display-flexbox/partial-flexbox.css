@@ -3,7 +3,6 @@
    Replace each _____ with the correct property/value.
    ============================================ */
 
-
 /* Task 1 — Navigation: logo on left, links on right */
 .nav-bar {
   _____: flex;
@@ -23,7 +22,6 @@
   _____: 16px;
 }
 
-
 /* Task 2 — Card grid: 3 cards in a row, equal width, gap 16px */
 .card-grid {
   _____: flex;
@@ -37,7 +35,6 @@
   text-align: center;
 }
 
-
 /* Task 3 — Center content both ways in a 200px tall box */
 .center-me {
   _____: flex;
@@ -46,7 +43,6 @@
   height: 200px;
   border: 1px dashed #999;
 }
-
 
 /* Task 4 — Equal height columns */
 .equal-height {

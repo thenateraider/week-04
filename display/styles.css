@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 600px;
+    flex-wrap: wrap;
+}
+.box {
+ width: 100px;
+ height: 100px;
+ background-color: blue;
+ font: bold;
+ color: white;
+ font-size: 42px;
+ 
+}

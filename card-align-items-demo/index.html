@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="เดโมแบบ interactive สำหรับเรียนรู้ CSS Flexbox align-items"
+    />
+    <title>Align-items Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+Thai:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">CSS FLEXBOX LAB</p>
+          <h1>Align-items Playground <span aria-hidden="true">✨</span></h1>
+          <p>ลองกดแต่ละค่า แล้วสังเกตตำแหน่งของกล่องตามแนวตั้ง</p>
+        </div>
+        <div class="axis-hint" aria-label="คำอธิบายแกน">
+          <span class="axis-arrow">↕</span>
+          <span><b>Cross axis</b><br />align-items จัดแนวแกนนี้</span>
+        </div>
+      </header>
+
+      <section class="playground">
+        <aside class="controls clay-card" aria-labelledby="controls-title">
+          <div class="section-heading">
+            <span class="section-badge">A</span>
+            <div>
+              <h2 id="controls-title">เลือก align-items</h2>
+              <p>คลิกเพื่อทดลอง</p>
+            </div>
+          </div>
+
+          <div class="button-list" role="radiogroup" aria-label="ค่า align-items">
+            <button class="choice is-active" type="button" role="radio" aria-checked="true" data-value="flex-start">
+              <span class="choice-icon icon-start" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span><b>flex-start</b><small>ชิดด้านบน</small></span>
+              <span class="check" aria-hidden="true">✓</span>
+            </button>
+            <button class="choice" type="button" role="radio" aria-checked="false" data-value="flex-end">
+              <span class="choice-icon icon-end" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span><b>flex-end</b><small>ชิดด้านล่าง</small></span>
+              <span class="check" aria-hidden="true">✓</span>
+            </button>
+            <button class="choice" type="button" role="radio" aria-checked="false" data-value="center">
+              <span class="choice-icon icon-center" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span><b>center</b><small>อยู่กึ่งกลาง</small></span>
+              <span class="check" aria-hidden="true">✓</span>
+            </button>
+            <button class="choice" type="button" role="radio" aria-checked="false" data-value="stretch">
+              <span class="choice-icon icon-stretch" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span><b>stretch</b><small>ยืดเต็มแนวตั้ง</small></span>
+              <span class="check" aria-hidden="true">✓</span>
+            </button>
+            <button class="choice" type="button" role="radio" aria-checked="false" data-value="baseline">
+              <span class="choice-icon icon-baseline" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span><b>baseline</b><small>จัดตามเส้นฐานตัวอักษร</small></span>
+              <span class="check" aria-hidden="true">✓</span>
+            </button>
+          </div>
+
+          <div class="mini-tip">
+            <span aria-hidden="true">💡</span>
+            <p><b>จำง่าย ๆ</b><br />align-items จัดวางสมาชิกทั้งหมดบน <em>cross axis</em></p>
+          </div>
+        </aside>
+
+        <section class="demo-panel clay-card" aria-labelledby="demo-title">
+          <div class="section-heading demo-heading">
+            <span class="section-badge">B</span>
+            <div>
+              <h2 id="demo-title">พื้นที่แสดงผล</h2>
+              <p>กรอบสีชมพูคือ Flex container</p>
+            </div>
+            <div class="current-pill">align-items: <b id="currentValue">flex-start</b></div>
+          </div>
+
+          <div class="flex-stage" id="flexStage" aria-live="polite">
+            <div class="axis-line"><span>cross axis</span></div>
+            <div class="alignment-guide" aria-hidden="true">
+              <span id="guideLabel">flex-start line</span>
+            </div>
+            <div class="demo-box box-1"><span>1</span><small>small</small></div>
+            <div class="demo-box box-2"><span>2</span><small>medium</small></div>
+            <div class="demo-box box-3"><span>3</span><small>large</small></div>
+            <div class="demo-box box-4"><span>4</span><small>box</small></div>
+            <div class="demo-box box-5"><span>5</span><small>box</small></div>
+            <div class="demo-box box-6"><span>6</span><small>box</small></div>
+            <div class="demo-box box-7"><span>7</span><small>box</small></div>
+            <div class="demo-box box-8"><span>8</span><small>box</small></div>
+            <div class="demo-box box-9"><span>9</span><small>box</small></div>
+          </div>
+        </section>
+
+        <section class="code-panel clay-card" aria-labelledby="code-title">
+          <div class="section-heading">
+            <span class="section-badge">C</span>
+            <div>
+              <h2 id="code-title">CSS ที่กำลังใช้</h2>
+              <p>โค้ดเปลี่ยนตามตัวเลือก</p>
+            </div>
+          </div>
+          <div class="code-wrap">
+            <pre><code><span class="selector">.container</span> {
+  <span class="property">display</span>: <span class="value">flex</span>;
+  <span class="property">align-items</span>: <span class="value code-value">flex-start</span>;
+}</code></pre>
+            <button class="copy-button" id="copyButton" type="button" aria-label="คัดลอก CSS">📋 คัดลอก</button>
+          </div>
+          <p class="explanation" id="explanation"><span aria-hidden="true">🌷</span> สมาชิกทุกกล่องจะชิดด้านบนของ container</p>
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

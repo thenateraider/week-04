@@ -7,8 +7,8 @@
 /* Task 1 — Card: add padding 24px on all sides, border 1px solid #ddd, border-radius 8px, box-sizing border-box */
 .card-task {
   border: 1px solid #ddd;
-  _____: 8px;
-  _____: _____;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 
@@ -22,11 +22,11 @@
 }
 
 .left {
-  _____: 32px;
+ margin-right: 32px;
 }
 
 .right {
-  _____: 0;
+  margin-left: 0;
 }
 
 
