@@ -98,10 +98,19 @@ h1 { margin-bottom: 4px; font-family: "Itim", "Noto Sans Thai", sans-serif; font
 .demo-box span { font-family: "Itim", sans-serif; font-size: 2.15rem; line-height: 1; }
 .demo-box small { margin-top: 5px; font-size: .59rem; opacity: .84; }
 .box-1 span { font-size: 1.35rem; }.box-2 span { font-size: 2.15rem; }.box-3 span { font-size: 3rem; }
+.demo-box.box-1 { flex-basis: 72px; width: 72px; height: 76px; }
+.demo-box.box-2 { flex-basis: 92px; width: 92px; height: 142px; }
+.demo-box.box-3 { flex-basis: 122px; width: 122px; height: 108px; }
+.demo-box.box-4 { flex-basis: 82px; width: 82px; height: 184px; }
+.demo-box.box-5 { flex-basis: 116px; width: 116px; height: 88px; }
+.demo-box.box-6 { flex-basis: 88px; width: 88px; height: 126px; }
+.demo-box.box-7 { flex-basis: 128px; width: 128px; height: 164px; }
+.demo-box.box-8 { flex-basis: 76px; width: 76px; height: 102px; }
+.demo-box.box-9 { flex-basis: 106px; width: 106px; height: 152px; }
 .flex-stage[data-align="stretch"] .demo-box { height: auto; }
-.flex-stage[data-align="baseline"] .demo-box { position: relative; height: auto; min-height: 76px; justify-content: flex-start; padding-top: 25px; overflow: visible; }
-.flex-stage[data-align="baseline"] .demo-box:nth-of-type(3n) { min-height: 125px; padding-top: 9px; }
-.flex-stage[data-align="baseline"] .demo-box:nth-of-type(3n + 1) { min-height: 155px; padding-top: 35px; }
+.flex-stage[data-align="baseline"] .demo-box { position: relative; justify-content: flex-start; padding-top: 25px; overflow: visible; }
+.flex-stage[data-align="baseline"] .box-1, .flex-stage[data-align="baseline"] .box-4, .flex-stage[data-align="baseline"] .box-7 { padding-top: 9px; }
+.flex-stage[data-align="baseline"] .box-3, .flex-stage[data-align="baseline"] .box-6, .flex-stage[data-align="baseline"] .box-9 { padding-top: 35px; }
 .flex-stage[data-align="baseline"] .demo-box span { position: relative; }
 .flex-stage[data-align="baseline"] .demo-box span::after { position: absolute; z-index: 5; left: -28px; bottom: 5px; width: 56px; border-top: 2px solid #fff; content: ""; filter: drop-shadow(0 1px 0 rgba(77,51,105,.45)); }
 .flex-stage[data-align="baseline"] .demo-box small { display: none; }
