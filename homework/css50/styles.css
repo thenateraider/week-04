@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Google Sans";
+
+}
+
+.container {
+    width: 680px;
+    height: 680px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 254, 247);
+    border: 1px solid #474747;
+
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.highlight-box {
+    width: 100%;
+    padding: 22px 22px 22px 22px;
+    box-sizing: border-box;
+}
+
+.highlight-box h1 {
+    font-size: 48px;
+}
+
+.highlight-box p {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.highlight-pics img {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+}
+
+.doomsday {
+    font-weight: 900;
+    font-style: italic;
+    color: #084600;
+}

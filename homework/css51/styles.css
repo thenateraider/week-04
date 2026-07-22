@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Google Sans";
+
+}
+
+.container {
+    width: 600px;
+    height: 750px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: rgb(255, 254, 247);
+    border: 1px solid #474747;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.highlight-box {
+    padding: 24px 50px;
+}
+
+.highlight-box h1 {
+    font-size: 64px;
+    margin-bottom: 26px;
+}
+
+.highlight-box p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.highlight-box #number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 72px;
+    font-weight: 900;
+    width: auto;
+    color: #000000;
+    background-color: #129e00;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 18px 0;
+    border-radius: 24px;
+}
+
+#number+p {
+
+    padding: 0;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
