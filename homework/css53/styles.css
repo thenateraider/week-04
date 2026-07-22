@@ -35,6 +35,14 @@ body {
     margin-bottom: 16px;
 }
 
+.sub-header-light {
+    color: white;
+}
+
+.sub-header-critical {
+    color: #e63946;
+}
+
 .header h1 {
     font-size: 38px;
     font-weight: 800;
