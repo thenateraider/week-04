@@ -18,11 +18,14 @@
                 <p><a href="#Vivo">Vivo</a></p>
                 <p><a href="#Samsung">Samsung</a></p>
             </div>
-            <select class="pills__dropdown">
-                <option value="apple">Apple</option>
-                <option value="vivo">Vivo</option>
-                <option value="samsung">Samsung</option>
-            </select>
+            <details class="pills__menu-dropdown">
+                <summary></summary>
+                <div class="menu-popup">
+                    <a href="#Apple" onclick="this.closest('details').removeAttribute('open')">Apple</a>
+                    <a href="#Vivo" onclick="this.closest('details').removeAttribute('open')">Vivo</a>
+                    <a href="#Samsung" onclick="this.closest('details').removeAttribute('open')">Samsung</a>
+                </div>
+            </details>
         </div>
     </div>
     <div class="highlight-products">
@@ -35,8 +38,8 @@
     </div>
 
     <div class="brand-section" style="background-color: rgb(230, 230, 230);">
-        <div class="header-section">
-            <h2 id="Apple">Apple</h2>
+        <div id="Apple" class="header-section">
+            <h2>Apple</h2>
         </div>
         <div class="content-row">
             <div class="content-columns">
@@ -104,8 +107,8 @@
 
 
     <div class="brand-section" style="background-color: rgb(170, 199, 255);">
-        <div class="header-section">
-            <h2 id="Vivo" style="color: rgb(24, 103, 250);">Vivo</h2>
+        <div id="Vivo" class="header-section">
+            <h2 style="color: rgb(24, 103, 250);">Vivo</h2>
         </div>
         <div class="content-row">
             <div class="content-columns">
@@ -171,8 +174,8 @@
     </div>
 
     <div class="brand-section" style="background-color: rgb(245, 245, 245);">
-        <div class="header-section">
-            <h2 id="Samsung" style="color: rgb(0, 60, 172);">Samsung</h2>
+        <div id="Samsung" class="header-section">
+            <h2 style="color: rgb(0, 60, 172);">Samsung</h2>
         </div>
         <div class="content-row">
             <div class="content-columns">
