@@ -35,15 +35,15 @@
   background: #0984e3;
   color: white;
   border: none;
-  _____: 12px 24px;
+  padding: 12px 24px;
   font-size: 1rem;
-  _____: 6px;
+  margin: 6px;
 }
 
 
 /* Task 4 — Image: 4px solid black border, 8px padding between image and border */
 .img-task {
-  _____: 4px solid black;
-  _____: 8px;
-  _____: 50%;
+  border: 4px solid black;
+  padding: 8px;
+  height: 50%;
 }
