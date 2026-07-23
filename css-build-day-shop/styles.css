@@ -273,6 +273,12 @@ body {
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.16);
 }
 
 .column .btn-wrapper {
@@ -282,6 +288,16 @@ body {
     bottom: 50px;
     right: 50px;
     z-index: 20;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .column {
+        transition: none;
+    }
+
+    .column:hover {
+        transform: none;
+    }
 }
 
 .column img {
